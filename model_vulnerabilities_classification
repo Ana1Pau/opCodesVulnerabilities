@@ -38,7 +38,7 @@ existing_sequences = [td[0] for td in training_data]
 if not any(np.array_equal(input_sequence, seq) for seq in existing_sequences):
     print("New opcode sequence detected:", input_sequence)
     # Log it and add it to dataset
-    training_data.append((input_sequence, 6))  # Use -1 for unknown class
+    #training_data.append((input_sequence, 6))  # Use -1 for unknown class
 else:
     print("Sequence exists in training data.")
 
